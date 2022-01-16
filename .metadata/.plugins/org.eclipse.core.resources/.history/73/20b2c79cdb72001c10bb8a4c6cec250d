@@ -1,0 +1,24 @@
+package q4;
+import java.util.ArrayList;
+
+public class DogTestArrayList {
+	String name;
+	String type;
+	ArrayList<Dog> DogList;
+	
+	public DogTestArrayList(String name, String type) {
+		this.name = name;
+		this.type = type;
+		DogList = new ArrayList<Dog>();
+	}
+	
+	public void addDog(String name, String Type) {
+		Dog dog = new Dog();
+		dog.setName(name);
+		dog.setType(Type);
+	}
+	
+	public void showDogInfo() {
+		System.out.println(name + "," + type);
+	}
+}
